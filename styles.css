@@ -1,0 +1,189 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #f9f9f9, #fff);
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 2px solid #2ecc71;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2ecc71;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+/* Responsive Design */
+
+/* Mobile Devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        padding: 0.5em;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin-right: 0;
+    }
+    main {
+        padding: 1em;
+    }
+    section {
+        padding: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+/* Tablet Devices (min-width: 481px and max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    header {
+        padding: 1em;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav li {
+        margin-right: 20px;
+    }
+    main {
+        padding: 2em;
+    }
+    section {
+        padding: 2em;
+        margin-bottom: 20px;
+    }
+}
+
+/* Desktop Devices (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        padding: 2em;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav li {
+        margin-right: 30px;
+    }
+    main {
+        padding: 3em;
+    }
+    section {
+        padding: 3em;
+        margin-bottom: 30px;
+    }
+}
+
+/* Additional Styles */
+
+.button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1abc9c;
+}
+
+.feature {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    margin-top: 0;
+}
+
+.feature ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feature li {
+    margin-bottom: 10px;
+}
+
+.feature li:before {
+    content: "\2713";
+    font-size: 18px;
+    color: #2ecc71;
+    margin-right: 10px;
+}
